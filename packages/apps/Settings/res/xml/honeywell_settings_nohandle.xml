@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2017 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<!--Created by Chenqi for KUN-177 on 2018/01/26-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/honeywell_settings_title" >
+
+    <!-- add by jason.gan for KUN-146 on 2018/2/1 begin-->
+    <!-- Scan Settings -->
+    <Preference
+        android:key="scan_settings"
+        android:title="@string/honeywell_scan_settings_title"
+        android:icon="@drawable/ic_settings_scanner">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.intermec.datacollectionservice"
+            android:targetClass="com.intermec.datacollectionservice.settings.ScanningActivity" />
+    </Preference>
+    <!-- add by jason.gan for KUN-146 on 2018/2/1 end-->
+
+    <!-- Keyremap -->
+    <Preference
+        android:key="keyremap_settings"
+        android:title="@string/keyremap_settings_title"
+        android:icon="@drawable/ic_lockscreen_ime">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.honeywell.keyremap2"
+            android:targetClass="com.honeywell.keyremap2.MainActivity" />
+    </Preference>
+
+    <!--Key wake up-->
+	<Preference
+        android:key="key_wake_up"
+        android:title="@string/keywakeup_settings_title"
+        android:icon="@drawable/ic_lockscreen_ime">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.honeywell.honeywellwakeup"
+            android:targetClass="com.honeywell.honeywellwakeup.MainActivity" />
+    </Preference>
+    <!--Added by Chenqi for KUN-125 on 2018/1/26 begin-->
+
+    <!--Smart Sensor-->
+    <Preference
+        android:key="smart_sensor"
+        android:title="@string/smartsensor_settings_title"
+        android:icon="@drawable/ic_settings_applications">
+        <intent
+            android:action="com.honeywell.systools.sensorsetting" />
+    </Preference>
+	<Preference
+        android:key="provisioning_mode"
+        android:title="@string/provisioning_mode"
+        android:icon="@drawable/ic_settings_security">
+        <intent
+            android:action="com.honeywell.systools.provisioningmode" />
+    </Preference>
+    <!--Added by Chenqi for KUN-125 on 2018/1/26 end-->
+    <!--Added by Chenqi for KUN-127 on 2018/1/26 begin-->
+    <!--Battery Maximizer-->
+    <Preference
+        android:key="battery_maximizer_settings"
+        android:title="@string/battery_maximizer_title"
+        android:icon="@drawable/ic_settings_battery">
+        <intent
+            android:action="com.honeywell.systools.batterymaximizer" />
+    </Preference>
+    <!--Added by Chenqi for KUN-127 on 2018/1/26 end-->
+
+    <!-- Battery LED -->
+    <Preference
+        android:key="battery_led_settings"
+        android:title="@string/batteryled_settings_title"
+        android:icon="@drawable/ic_bt_misc_hid">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.honeywell.batteryled"
+            android:targetClass="com.honeywell.batteryled.BatteryLedActivity" />
+    </Preference>
+
+    <!--Added by Chenqi for KUN-369 on 2018/04/21 begin-->
+    <!--Battery Monitor-->
+    <Preference
+        android:key="battery_monitor_settings"
+        android:title="@string/battery_monitor_title"
+        android:icon="@drawable/ic_settings_battery">
+        <intent
+            android:action="com.honeywell.systools.batterymonitor" />
+    </Preference>
+    <!--Added by Chenqi for KUN-369 on 2018/04/21 end-->
+
+    <!--Added by Chenqi for KUN-124 on 2018/1/29 begin-->
+    <!--HXLogger-->
+    <Preference
+        android:key="hx_logger_settings"
+        android:title="@string/hx_logger_title"
+        android:icon="@drawable/ic_settings_logger">
+        <intent
+            android:action="com.honeywell.systools.HX_LOGGER" />
+    </Preference>
+    <!--Added by Chenqi for KUN-124 on 2018/1/29 end-->
+
+    <!-- add by jason.gan for KUN-145 on 2018/2/1 begin-->
+    <!-- BugReporter Settings -->
+    <Preference
+        android:key="bug_reporter_settings"
+        android:title="@string/bug_reporter_title"
+        android:icon="@drawable/ic_settings_bug_reporter">
+        <intent
+            android:action="com.honeywell.systools.BUG_REPORTER" />
+    </Preference>
+    <!-- add by jason.gan for KUN-145 on 2018/2/1 end-->
+    <!--Added by Chenqi for KUN-128 on 2018/2/2 begin-->
+    <!--Web Application-->
+    <Preference
+        android:key="web_application_settings"
+        android:title="@string/web_interface_title"
+        android:icon="@drawable/ic_settings_web">
+        <intent android:action="com.intermec.webinterface.intent.action.SETTINGS" />
+    </Preference>
+    <!--Added by Chenqi for KUN-128 on 2018/2/2 end-->
+
+
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (c) 2011-2012 Honeywell, Inc.  All rights reserved. -->
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/ntp_server_set_ntp_server_title">
+
+        <Preference android:key="dhcp_ntp"
+            android:title="@string/dhcp_server_set_dhcp_server_title"
+            android:summary="@string/dhcp_server_select_dhcp_server_summary"
+        />
+
+        <ListPreference android:key="preset_ntp"
+            android:title="@string/preset_server_set_preset_server_title"
+            android:summary="@string/preset_server_select_preset_server_summary"
+            android:entries="@array/ntp_server_array_entries"
+            android:entryValues="@array/ntp_server_array_values"
+        />
+
+        <EditTextPreference android:key="user_defined_ntp"
+            android:title="@string/user_defined_ntp_server_title"
+            android:summary="@string/ntp_server_set_ntp_server_manual_summary"
+        />
+
+        <ListPreference android:key="update_time"
+            android:title="@string/update_time_at_once_title"
+            android:summary="@string/ntp_server_not_set_summary"
+            android:entries="@array/ntp_server_timeout_ui_entries"
+            android:entryValues="@array/ntp_server_timeout_array_values"
+        />
+    </PreferenceScreen>

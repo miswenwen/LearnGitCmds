@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--Created by Chenqi for for honeywell proprietary[KUN-132]-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/honeywell_proprietary_title">
+
+    <SwitchPreference
+        android:key="enable_CCX"
+        android:title="@string/enable_CCX_title"
+        android:summary="@string/enable_CCX_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="enable_ft"
+        android:title="@string/enable_ft_title"
+        android:summary="@string/enable_ft_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="enable_11k"
+        android:title="@string/enable_11k_title"
+        android:summary="@string/enable_11k_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="enable_ps"
+        android:title="@string/enable_ps_title"
+        android:summary="@string/enable_ps_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="enable_11d"
+        android:title="@string/enable_11d_title"
+        android:summary="@string/enable_11d_summary"
+        android:persistent="false" />
+
+    <SwitchPreference
+        android:key="enable_p2p"
+        android:title="@string/enable_p2p_title"
+        android:summary="@string/enable_p2p_summary"
+        android:persistent="false" />
+
+    <!-- added for WiFi's wild scan feature -->
+    <SwitchPreference
+            android:key="wifi_wild_scan"
+            android:title="@string/wifi_wild_scan"
+            android:summary="@string/wifi_wild_scan_summary"
+            android:persistent="false" />
+
+    <SwitchPreference
+        android:key="force_wifi_pref"
+        android:title="@string/force_Ethernet_Wifi_Priority_title"
+        android:summary="@string/force_Ethernet_Wifi_Priority_summary"
+        android:persistent="true" />
+
+    <ListPreference
+        android:key="config_wmm"
+        android:title="@string/wmm_config_title"
+        android:entries="@array/wmm_config_entries"
+        android:entryValues="@array/wmm_config_entries_values" />
+
+    <ListPreference
+        android:key="frequency_band"
+        android:title="@string/wifi_setting_frequency_band_title"
+        android:summary="@string/wifi_setting_frequency_band_summary"
+        android:entries="@array/wifi_frequency_band_entries"
+        android:entryValues="@array/wifi_frequency_band_values" />
+
+    <SwitchPreference
+            android:key="pa_scan_convert"
+            android:title="@string/pa_scan_convert"
+            android:summary="@string/pa_scan_convert_summary"
+            android:persistent="false" />
+
+    <CheckBoxPreference
+        android:key="enable_operating_channels"
+        android:title="@string/enable_operating_channels"
+        android:summary="@string/enable_operating_channels_summary"
+        android:persistent="false" />
+
+    <Preference
+        android:key="operating_channels_config"
+        android:title="@string/operating_channels_config"
+        android:persistent="false" />
+
+    <Preference
+        android:key="wifi_roaming"
+        android:title="@string/wifi_config_roaming_title"
+        android:persistent="false" />
+
+    <Preference
+        android:key="beacon_loss"
+        android:title="@string/beacon_loss_title"
+        android:persistent="false" />
+
+    <Preference
+        android:key="dot11mode"
+        android:title="@string/dot11mode_title"
+        android:persistent="false" />
+
+    <Preference
+        android:key="dEaptimeout"
+        android:title="@string/eapmode_title"
+        android:persistent="false" />
+
+    <Preference
+        android:key="wifi_config_backup_restore"
+        android:title="@string/wifi_config_backup_restore_title"
+        android:persistent="false" />
+
+</PreferenceScreen>

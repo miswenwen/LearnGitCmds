@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Created by Chenqi
+    Description:Erase partion data[KUN-73]
+    Date:2017/12/27
+    -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/honeywell_developer_title">
+
+    <com.android.settingslib.RestrictedPreference
+        android:key="honey_develop_option"
+        android:title="@string/honeywell_developer_reset_title">
+        <intent
+            android:targetClass="com.android.settings.honeywell.EraserData"
+            android:targetPackage="com.android.settings" />
+    </com.android.settingslib.RestrictedPreference>
+
+    <SwitchPreference
+        android:key="usb_diagnostic"
+        android:title="@string/USB_Diagnostic_title" />
+
+</PreferenceScreen>
